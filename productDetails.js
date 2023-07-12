@@ -12,7 +12,7 @@ const queryParams = new URLSearchParams(window.location.search);
 console.log(queryParams);
 const productId = queryParams.get('id');
 
-fetch(`http://localhost:3000/api/productDetails/getProductDetails/${productId}`)
+fetch(`http://192.168.202.254:3000/api/productDetails/getProductDetails/${productId}`)
   .then((response) => response.json())
   .then((data)=>{
     let productDetails = data;
