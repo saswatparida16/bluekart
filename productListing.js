@@ -23,7 +23,7 @@ fetch("http://localhost:3000/api/productDetails/getProductDetails")
     products.forEach((product) => {
       const item = document.createElement("div");
       item.classList.add("product-item");
-      const url = `http://127.0.0.1:5500/ProductDetailsPage/productDetails.html?id=${product.id}`;
+      const url = `productDetails.html?id=${product.id}`;
       item.innerHTML = `
         <a href="${url}" target = "_blank"><img src=${product.image1}></a>
         <h1>${product.ProductName}</h1>
