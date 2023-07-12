@@ -13,7 +13,7 @@
 //   // Add more products as needed
 // ];
 let products;
-fetch("http://localhost:3000/api/productDetails/getProductDetails")
+fetch("http://192.168.202.254:3000/api/productDetails/getProductDetails")
   .then((response) => response.json())
   .then((data) => {
     // Process the retrieved data
