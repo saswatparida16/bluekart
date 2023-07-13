@@ -196,10 +196,10 @@ i{
     .wish{
         display: none;
     }
+    #ul:not(.open) {
+        display: none;
+}
+    #sidebar:not(.open){
+        display: none;
+}
 } 
-#ul:not(.open) {
-    display: none;
-}
-#sidebar:not(.open){
-    display: none;
-}
