@@ -135,22 +135,12 @@ i{
     display: none;
 }
 
-/* @media (max-width: 1280px) {
-    header nav{
-        padding: 15px 2%;
-        transition: .2s;
-    }
-    ul li a{
-        padding: 5px 0;
-        margin: 0px 20px;
-    }
-}
 @media (max-width: 1090px) {
     #sidebar {
         display: block;
         position: fixed;
         top: 60px;
-        right: 25px;
+        right: 0;
         padding: 10px;
         background-color: blueviolet;
         z-index: 999;
@@ -167,26 +157,30 @@ i{
     #menu-icon{
         display: block;
     }
-    ul{
-        position: absolute;
-        top: 100%;
-        right: 2%;
+    nav ul{
+        position: fixed;
+        top: 5vh;
+        left: 0;
         width: 100%;
         height: 100vh;
         background-color: blueviolet;
-        display: flex;
+        text-align: center;
+         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         border-radius: 2px;
-        transition: all .50s ease;
+        transition: all .50s ease; 
     }
-    ul li a{
+   ul li{
+            margin-top: 40px;
+    }
+      ul li a{
         display: block;
         margin: 12px;
         padding: 0px 25px;
         transition: all 0.50s ease;
-    }
-    ul li a:hover{
+    }  
+     ul li a:hover{
         color: aqua;
         transform: translateY(5px);
     }
@@ -195,5 +189,17 @@ i{
     }
     .search-img{
         display: none;
+    }  
+    header nav{
+        padding: 0;
     }
-} */
+    .wish{
+        display: none;
+    }
+} 
+#ul:not(.open) {
+    display: none;
+}
+#sidebar:not(.open){
+    display: none;
+}
