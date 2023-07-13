@@ -13,9 +13,9 @@
 <body>
     <header>
         <nav>
-            <spa class="logo">BlueKart</spa>
-            <ul class="navbar">
-                <li><a href="index.html">Womens</a>
+            <a href="index.html"><spa class="logo" id="logo">BlueKart</spa></a>
+            <ul class="navbar" id="ul">
+                <li><a href="productListing.html">Womens</a>
                 </li>
                 <li><a href="productListing.html">Mens</a>
                 </li>
@@ -27,12 +27,14 @@
             <div class="main">
                 <input type="text" placeholder="search " class="search ri-search-line" name="" id="">
                 <i class="ri-search-line search-img"></i>
-                <a href="Login.html" target="_blank" class="user"></i><i
-                        class="ri-user-fill"></i>Profie</a>
-                <a href="productListing.html" class=" user"><i class="ri-bookmark-fill"></i>Wishlist</a>
+                <a href="Login.html" target="_blank" class="user"></i><i class="ri-user-fill"></i>Profie</a>
+                <a href="productListing.html" class="wish user"><i class=" ri-bookmark-fill"></i>Wishlist</a>
                 <a href="addToCart.html" class=" user"><i class="ri-handbag-fill"></i>0</a>
-                <div class="i ri-menu-line" id="menu-icon"></div>
-                <link rel="stylesheet" href="header.css">
+                <div class="ri-menu-line" id="menu-icon"></div>
+                <div id="sidebar">
+                    <i class="ri-close-line close-button"></i>
+                </div>
+                
             </div>
         </nav>
     </header>
