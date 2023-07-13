@@ -198,8 +198,8 @@ i{
     }
     #ul:not(.open) {
         display: none;
-}
+    }
     #sidebar:not(.open){
         display: none;
-}
+    }
 } 
