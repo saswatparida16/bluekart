@@ -11,27 +11,25 @@
 </head>
 
 <body>
-    <script src="header.js"></script>
-    <div class="small-container cart-page">
-    <header>
+<header>
         <nav>
             <a href="index.html"><spa class="logo" id="logo">BlueKart</spa></a>
             <ul class="navbar" id="ul">
-                <li><a href="productListing.html">Womens</a>
+                <li><a href="productListing.html">Products</a>
                 </li>
-                <li><a href="productListing.html">Mens</a>
+                <!-- <li><a href="productListing.html">Mens</a>
                 </li>
                 <li><a href="productListing.html">Girls</a>
                 </li>
                 <li><a href="productListing.html">Boys</a>
-                </li>
+                </li> -->
             </ul>
             <div class="main">
                 <input type="text" placeholder="search " class="search ri-search-line" name="" id="">
                 <i class="ri-search-line search-img"></i>
                 <a href="Login.html" target="_blank" class="user"></i><i class="ri-user-fill"></i>Profie</a>
-                <a href="productListing.html" class="wish user"><i class=" ri-bookmark-fill"></i>Wishlist</a>
-                <a href="addToCart.html" class=" user"><i class="ri-handbag-fill"></i>0</a>
+                <a href="productListing.html" class="wish user"><i class="ri-bookmark-fill"></i>Wishlist</a>
+                <a href="addToCart.html" class=" user" id="k"></a>
                 <div class="ri-menu-line" id="menu-icon"></div>
                 <div id="sidebar">
                     <i class="ri-close-line close-button"></i>
@@ -41,99 +39,55 @@
         </nav>
     </header>
 <!-- cart item -->
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="https://rukminim2.flixcart.com/image/224/224/xif0q/smartwatch/y/l/e/-original-imaghxgrynxjvhkg.jpeg?q=90" alt="">
-                        <div>
-                            <p>Printed Watch</p>
-                            <small>Price: $100</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                        </div>
-                </td>
-                <td><input type="number" value="0"></td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="https://rukminim2.flixcart.com/image/224/224/xif0q/smartwatch/y/l/e/-original-imaghxgrynxjvhkg.jpeg?q=90" alt="">
-                        <div>
-                            <p>Printed Watch</p>
-                            <small>Price: $100</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                        </div>
-                </td>
-                <td><input type="number" value="0"></td>
-                <td>100</td>
-            </tr>
-              <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="https://rukminim2.flixcart.com/image/224/224/xif0q/smartwatch/y/l/e/-original-imaghxgrynxjvhkg.jpeg?q=90" alt="">
-                        <div>
-                            <p>Printed Watch</p>
-                            <small>Price: $100</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                        </div>
-                </td>
-                <td><input type="number" value="0"></td>
-                <td>100</td>
-            </tr>  
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="https://rukminim2.flixcart.com/image/224/224/xif0q/smartwatch/y/l/e/-original-imaghxgrynxjvhkg.jpeg?q=90" alt="">
-                        <div>
-                            <p>Printed Watch</p>
-                            <small>Price: $100</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                        </div>
-                </td>
-                <td><input type="number" value="0"></td>
-                <td>100</td>
-            </tr>
-              <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="https://rukminim2.flixcart.com/image/224/224/xif0q/smartwatch/y/l/e/-original-imaghxgrynxjvhkg.jpeg?q=90" alt="">
-                        <div>
-                            <p>Printed Watch</p>
-                            <small>Price: $100</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                        </div>
-                </td>
-                <td><input type="number" value="0"></td>
-                <td>100</td>
-            </tr>
-        </table>
-        <div class="total-price">
-            <table>
-                <tr>
-                    <td>Sub Total</td>
-                    <td>500</td>
-                </tr>
-            </table>
-        </div>
-        <button>Check out</button>
+        <div class="container">
+    <div class="checkout-form">
+      <h2>Customer Information</h2>
+      <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+      </div>
+
+      <div class="input-group">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+      </div>
+
+      <div class="input-group">
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode" required>
+      </div>
     </div>
-    
+
+    <div class="payment-method">
+      <h2>Payment Method</h2>
+      <div class="payment-option">
+        <input type="radio" id="cashOnDelivery" name="paymentMethod" value="cashOnDelivery" required>
+        <label for="cashOnDelivery">Cash on Delivery</label>
+        <span>(Select this option for Cash on Delivery)</span>
+      </div>
+      <!-- You can add more payment options here -->
+    </div>
+
+    <a href="../Thankyoupage/thankyoupage.html"><button type="submit">Place Order</button></a>
+  </div>
+
+  <script src="checkout.js"></script>
+  <script src="header.js"></script>
 </body>
 
 </html>
